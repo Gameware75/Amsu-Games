@@ -1,2 +1,0 @@
-# amsu-games
-Amsu Games
