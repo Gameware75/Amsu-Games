@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UWU</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/021/856/833/original/cloudy-sky-background-unicorn-fantasy-pastel-galaxy-rainbow-cute-wallpaper-fluffy-magic-pink-landscape-illustration-vector.jpg'); /* Hintergrundbild-URL hier einfügen */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Bild wird nicht wiederholt */
+      text-align: center;
+      padding-top: 200px;
+      color: #ffffff; /* Textfarbe auf weiß ändern */
+      margin: 0; /* Rand entfernen, um die Anzeige zu optimieren */
+	  
+    }
+
+    #countdown {
+      font-size: 36px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe des Countdowns mit Transparenz */
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+<div id="countdown"></div>
+
+<script>
+  // Set the date for Christmas
+  const christmasDate = new Date("December 24, 2023 00:00:00").getTime();
+
+  // Update the countdown every second
+  const countdown = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = christmasDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML = "Frohe Weihnachten!";
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
