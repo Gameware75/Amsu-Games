@@ -4,7 +4,7 @@ Hallo! Ich bin Gamesu, auch bekannt als Gameware75. Ich habe eine Sammlung von M
 
 Alle Spiele findet ihr unter [www.amsu-game.de](https://www.amsu-game.de)
 
-Alle spiele, sind in Scratch erstellt aber mit Turbowarb für mehr Features die .sb3 Dateien werden bald öffentlich gemacht 
+
 
 README
 ## Wie kannst du helfen?
